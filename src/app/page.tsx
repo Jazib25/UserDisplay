@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { User } from "./types/user";
-import { fetchUsers } from "./services/userservices";
-import UserForm from "./components/userform";
-import UserList from "./components/userlist";
+import { User } from "./components/types/user";
+import { fetchUsers } from "./components/services/userservices";
+import UserForm from "./components/userdisply/userform";
+import UserList from "./components/userdisply/userlist";
 
 export default function Home() {
   const [users, setUsers] = useState<User[]>([]);
